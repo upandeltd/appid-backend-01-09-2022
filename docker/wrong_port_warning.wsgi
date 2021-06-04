@@ -15,7 +15,7 @@ administrator of this server: KoBoCAT received this request on port 8000, when
 <a href="https://github.com/kobotoolbox/kobo-docker/issues/301">
 https://github.com/kobotoolbox/kobo-docker/issues/301</a> for more
 information.</p>
-<p>Thanks for using KoBoToolbox.</p></body></html>
+<p>Thanks for using APPID.</p></body></html>
 '''
 
 def application(env, start_response):

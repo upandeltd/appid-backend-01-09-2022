@@ -34,15 +34,15 @@ release where each was present:
 
 ## About
 
-kobocat is the data collection platform used in KoBoToolbox. It is based
-on the excellent [onadata](http://github.com/onaio/onadata) platform
+kobocat is the data collection platform used in APPID. It is based
+on the excellent KoboToolbox platform derived from [onadata](http://github.com/onaio/onadata) platform
 developed by Ona LLC, which in itself is a redevelopment of the
 [formhub](http://github.com/SEL-Columbia/formhub) platform developed by
 the Sustainable Engineering Lab at Columbia University.
 
 Please refer to
-[kobo-install](https://github.com/kobotoolbox/kobo-install) for
-instructions on how to install KoBoToolbox.
+[kobo-install](https://github.com/simatei/appid-install) for
+instructions on how to install APPID.
 
 ## Code Structure
 
