@@ -263,11 +263,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
         'onadata.libs.authentication.DigestAuthentication',
         'oauth2_provider.ext.rest_framework.OAuth2Authentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-        'onadata.libs.authentication.HttpsOnlyBasicAuthentication',
+        # 'onadata.libs.authentication.HttpsOnlyBasicAuthentication',
     ),
     'DEFAULT_RENDERER_CLASSES': (
         # Keep JSONRenderer at the top "in order to send JSON responses to
