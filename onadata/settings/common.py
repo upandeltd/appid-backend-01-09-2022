@@ -263,11 +263,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
         'onadata.libs.authentication.DigestAuthentication',
         'oauth2_provider.ext.rest_framework.OAuth2Authentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
-        'onadata.libs.authentication.HttpsOnlyBasicAuthentication',
+        # 'onadata.libs.authentication.HttpsOnlyBasicAuthentication',
     ),
     'DEFAULT_RENDERER_CLASSES': (
         # Keep JSONRenderer at the top "in order to send JSON responses to
@@ -295,7 +296,9 @@ SWAGGER_SETTINGS = {
     ],
 }
 
-CORS_ORIGIN_ALLOW_ALL = False
+#!TODO: Set CORS_ORIGIN_ALLOW_ALL to False and whitelist APPID address
+
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     'dev.ona.io',
