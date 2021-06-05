@@ -296,7 +296,9 @@ SWAGGER_SETTINGS = {
     ],
 }
 
-CORS_ORIGIN_ALLOW_ALL = False
+#!TODO: Set CORS_ORIGIN_ALLOW_ALL to False and whitelist APPID address
+
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     'dev.ona.io',
